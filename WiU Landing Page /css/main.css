@@ -4,6 +4,15 @@ body{
 	font-size: 62.5%;
 	font-family: helvetica, arial, sans-serif;
 	color:#545257; /*changes color of the whole text*/
+	background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fceabb+4,ef988d+100 */
+	background: #fceabb; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fceabb 4%, #ef988d 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(4%,#fceabb), color-stop(100%,#ef988d)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #fceabb 4%,#ef988d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #fceabb 4%,#ef988d 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #fceabb 4%,#ef988d 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #fceabb 4%,#ef988d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#ef988d',GradientType=0 ); /* IE6-9 */
 	margin-top: 0;
 }
 #wrapper{
@@ -22,11 +31,16 @@ header{
 	border-bottom: 1px solid #bbb8bf; /*changes color of border under project name*/
 }
 h1{
+	text-align:center;
+	font-size: 40px;
 	margin-top: 0;
 	padding-top: 10px;
+	text-shadow: 2px 2px 4px white;
 }
 h2{
+	font-size:20px;
 	margin-top: 20px;
+	text-shadow: 2px 2px 4px white;
 }
 /*-------------------------------------------  table -------------------------------------------------------*/
 table{
@@ -69,6 +83,7 @@ td:first-child{
 	width: 67.5%;
 	float: left;
 	font-size: 1.4em;
+	text-indent: 50px;
 
 }
 .main figure{
@@ -88,12 +103,24 @@ figure img{
 
 /*-------------------------------------------  links -------------------------------------------------------*/
 a{
-	text-decoration: none;
 	font-size: 1.3em;
-	color: #475a80;  /*changes color of the links*/
 }
+/* mouse over link */
 a:hover{
 	text-decoration: underline;
+	color: peru;
+}
+/* unvisited link */
+a:link {
+	color: #475a80;
+}
+/* visited link */
+a:visited {
+	color: #ef988d;
+}
+/* selected link */
+a:active {
+	color: #ef988d;
 }
 /*-------------------------------------------  footer-------------------------------------------------------*/
 footer{
